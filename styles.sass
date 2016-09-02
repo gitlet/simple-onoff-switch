@@ -1,0 +1,39 @@
+// initial reset
+*
+  margin: auto
+  padding: 0
+body
+  font-family: Helvetica, monospace, sans-serif
+  .container
+    border: 1px solid #666
+    margin: 10px auto 0
+    width: 400px
+    height: 200px
+    padding: 10px
+    .caption-and-btn
+      list-style-type: none
+      li
+        display: inline-block
+      .btn
+        float: right
+        cursor: pointer
+        background: #e4e4e4
+        padding: 10px
+      .btn::before
+        content: "ON"
+        color: #999
+        margin-right: 10px
+      .btn::after
+        content: "OFF"
+        color: #999
+    .tia
+      background: aqua
+      position: relative
+      height: 38px
+      width: 43px
+      top: -18px
+      left: 136px
+      transition: left ease 1s
+      cursor: pointer
+    .move
+      left: 179px
